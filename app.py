@@ -64,8 +64,8 @@ class ReverbManager:
 st.set_page_config(page_title="Reverb Manager", layout="wide")
 
 if "token" not in st.session_state:
-    st.title("🔑 Reverb Login")
-    token_input = st.text_input("Enter Reverb API Token:", type="password")
+    st.title("🔑")
+    token_input = st.text_input("Enter 🔑:", type="password")
     if st.button("Connect"):
         if token_input:
             st.session_state.token = token_input
