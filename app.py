@@ -25,7 +25,7 @@ class ReverbManager:
     def create_draft(self, src, ship_id):
         try:
             amount = float(src.get("price", {}).get("amount", "0").replace(",", ""))
-            new_price = f"{(amount * 0.5):.2f}"
+            new_price = f"{(amount * 0.7):.2f}"
         except: new_price = "0.00"
 
         payload = {
